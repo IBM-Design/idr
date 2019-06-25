@@ -24,7 +24,7 @@ const FirstRightText = () => (
 
 const BannerText = () => (
   <div className="homepage--header__wrapper">
-    <h1 className="homepage--header__title">
+    <h1 className="homepage--header__title bx--type-display-01">
       <span>We are not our users.</span>
     </h1>
     <p className="homepage--header__subtitle">
