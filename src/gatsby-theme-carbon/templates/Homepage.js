@@ -1,65 +1,44 @@
-import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import React from "react";
+import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
 
 // Component to be shadowed
-import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
+import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 
-import Carbon from '../../images/carbon.jpg';
+import Pulse from "../../images/pulse.svg";
 
-const FirstLeftText = () => (
-  <p>
-    Think → <strong>Guidance</strong>
-  </p>
-);
+const FirstLeftText = () => <p>What is Design Research?</p>;
 
 const FirstRightText = () => (
   <p>
-    <strong>Build Bonds</strong>
-    <br />
-    This is the guiding ethos behind IBM’s design philosophy and principles.
-    This helps us distinguish every element and every experience Designed by
-    IBM.
-  </p>
-);
-
-const SecondLeftText = () => <p>Wondering how to contribute?</p>;
-
-const SecondRightText = () => (
-  <p>
-    We welcome all feedback, designs, or ideas in order to produce the best
-    possible experience for our users. If you’re interested in contributing,
-    check out our contributing guidelines to get started.
-    <br />
-    <a
-      css={({ typeStyles }) => typeStyles.bodyShort02}
-      href="https://www.carbondesignsystem.com/contributing/governance"
-    >
-      Start Contributing →
+    Design research is at the heart of Enterprise Design Thinking. If you're not
+    practicing design research, you're not working in the Loop. Design research
+    helps teams uncover insights and inform the experiences we create for
+    people. It turns out good design really is good business. Learn more about
+    the business impact of Enterprise Design Thinking in this{" "}
+    <a href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf">
+      Forrester report
     </a>
+    .
   </p>
 );
 
 const BannerText = () => (
-  <h1>
-    Carbon
-    <br />
-    Design System
-  </h1>
+  <div className="homepage--header__wrapper">
+    <h1 className="homepage--header__title">
+      <span>We are not our users.</span>
+    </h1>
+    <p className="homepage--header__subtitle">
+      An authentic focus on people begins with this recognition.
+    </p>
+  </div>
 );
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
+  Banner: <HomepageBanner renderText={BannerText} image={Pulse} />,
   FirstCallout: (
     <HomepageCallout leftText={FirstLeftText} rightText={FirstRightText} />
   ),
-  SecondCallout: (
-    <HomepageCallout
-      leftText={SecondLeftText}
-      rightText={SecondRightText}
-      color="white"
-      backgroundColor="#061f80"
-    />
-  ),
+  SecondCallout: null
 };
 
 // spreading the original props gives us props.children (mdx content)

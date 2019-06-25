@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="994px" height="986px" viewBox="0 0 994 986" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Pulse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="496" cy="492" rx="496" ry="492"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="992" height="984" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Pulse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 1.000000)">
+            <ellipse id="Oval-10" fill="#FFA0C2" opacity="0.200000003" cx="493.5" cy="493" rx="267.5" ry="265"></ellipse>
+            <path d="M494.5,788 C658.804713,788 792,655.700144 792,492.5 C792,329.299856 658.804713,197 494.5,197 C330.195287,197 197,329.299856 197,492.5 C197,655.700144 330.195287,788 494.5,788 Z" id="Oval-10" stroke="#FF767C" stroke-width="2" stroke-dasharray="2,10"></path>
+            <ellipse id="Oval-10" fill="#FA75A6" opacity="0.5" cx="494.5" cy="494" rx="213.5" ry="212"></ellipse>
+            <ellipse id="Oval-10" fill="#EE538B" cx="493.5" cy="495" rx="150.5" ry="150"></ellipse>
+            <path d="M495,866 C703.211351,866 872,698.778354 872,492.5 C872,286.221646 703.211351,119 495,119 C286.788649,119 118,286.221646 118,492.5 C118,698.778354 286.788649,866 495,866 Z" id="Oval-10" stroke="#EE538B" stroke-width="2" stroke-dasharray="2,10"></path>
+            <use id="Oval-10" stroke="#EE538B" mask="url(#mask-2)" stroke-width="4" opacity="0.600000024" stroke-dasharray="2,10" xlink:href="#path-1"></use>
+            <path d="M494.5,846 C691.389513,846 851,687.956517 851,493 C851,298.043483 691.389513,140 494.5,140 C297.610487,140 138,298.043483 138,493 C138,687.956517 297.610487,846 494.5,846 Z" id="Oval-10-Copy" stroke="#EE538B" stroke-width="2" opacity="0.200000003" stroke-dasharray="2,10"></path>
+        </g>
+    </g>
+</svg>

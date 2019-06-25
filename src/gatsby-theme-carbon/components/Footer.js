@@ -1,38 +1,30 @@
-import React from 'react';
-import Footer from 'gatsby-theme-carbon/src/components/Footer';
+import React from "react";
+import Footer from "gatsby-theme-carbon/src/components/Footer";
 
 const Content = () => (
   <>
     <p>
-      By importing the <code>Footer</code> component from gatsby-theme-carbon,
-      we can supply our own props.
+      Last updated May 2019
+      <br />
+      Copyright © 2019 IBM
     </p>
-    <br />
-    <p>
-      The default export from a shadowed component will replace that component
-      in the theme.
-    </p>
-    <br />
-    <a href="https://www.gatsbyjs.org/docs/themes/api-reference/#component-shadowing">
-      More about component shadowing
-    </a>
   </>
 );
 
 const links = {
   firstCol: [
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
+    { href: "https://www.ibm.com/privacy", linkText: "Privacy" },
+    { href: "https://www.ibm.com/legal", linkText: "Terms of Use" },
+    { href: "https://ibm.com", linkText: "IBM.com" }
   ],
   secondCol: [
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-  ],
+    { href: "https://twitter.com/ibmdesign", linkText: "Twitter" },
+    { href: "https://facebook.com/ibmdesign", linkText: "Facebook" }
+  ]
 };
 
-const CustomFooter = () => <Footer links={links} Content={Content} />;
+const CustomFooter = props => (
+  <Footer {...props} links={links} Content={Content} />
+);
 
 export default CustomFooter;
