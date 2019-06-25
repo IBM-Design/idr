@@ -1,0 +1,50 @@
+- title: Components
+  pages:
+    - title: Markdown
+      path: /components/markdown
+    - title: Demo
+      path: /components/demo
+    - title: Grid
+      path: /components/Grid
+    - title: DoDontExample
+      path: /components/DoDontExample
+    - title: Caption
+      path: /components/Caption
+    - title: Aside
+      path: /components/Aside
+    - title: AnchorLinks
+      path: /components/AnchorLinks
+    - title: PageDescription
+      path: /components/PageDescription
+    - title: ResourceCard
+      path: /components/ResourceCard
+    - title: ArticleCard
+      path: /components/ArticleCard
+    - title: FeatureCard
+      path: /components/FeatureCard
+    - title: ImageCard
+      path: /components/ImageCard
+    - title: Tabs
+      path: /components/Tabs
+- title: Contributing
+  pages:
+    - title: Agreement
+      path: /contributing/agreement
+    - title: Governance
+      path: /contributing/governance
+    - title: Designers
+      path: /contributing/designers
+- title: Getting Started
+  pages:
+    - title: Developers
+      path: /getting-started/developers/react
+    - title: About Carbon
+      path: /getting-started/about-carbon
+    - title: Designers
+      path: /getting-started/designers
+- title: Top Level With Tabs
+  pages:
+    - path: /top-level-with-tabs/tab-one
+- title: Resources
+  pages:
+    - path: /resources
