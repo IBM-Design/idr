@@ -1,5 +1,6 @@
 import React from "react";
 import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import HomepageHeader from "../../components/HomepageHeader";
 
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
@@ -34,7 +35,7 @@ const BannerText = () => (
 );
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Pulse} />,
+  Banner: <HomepageHeader />,
   FirstCallout: (
     <HomepageCallout leftText={FirstLeftText} rightText={FirstRightText} />
   ),
