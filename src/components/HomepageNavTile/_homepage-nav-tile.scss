@@ -1,0 +1,55 @@
+// Pink Tiles
+
+.homepage--callout--tiles {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 4rem;
+  background: $carbon--gray-100;
+  z-index: 2;
+}
+
+.homepage--callout--tiles a {
+  color: $carbon--white-0;
+}
+
+.homepage--tile-border {
+  outline: $carbon--magenta-50 solid 1px;
+}
+
+.homepage--tile-border:hover {
+  background-color: $carbon--magenta-50;
+  //   transition: $transition--base $bx--standard-easing;
+}
+
+.homepage--tile-padding {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.homepage--tile-height {
+  height: 100%;
+}
+
+.inside p {
+  line-height: 3rem;
+}
+
+.homepage--tile-wrapper div svg {
+  fill: white;
+}
+
+.homepage--tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.homepage--tile-subheader-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.homepage--tile-subheader-text {
+  width: 163px;
+}

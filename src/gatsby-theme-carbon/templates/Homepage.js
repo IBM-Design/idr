@@ -1,11 +1,9 @@
 import React from "react";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import { HomepageCallout } from "gatsby-theme-carbon";
 import HomepageHeader from "../../components/HomepageHeader";
 
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
-
-import Pulse from "../../images/pulse.svg";
 
 const FirstLeftText = () => <p>What is Design Research?</p>;
 
@@ -21,17 +19,6 @@ const FirstRightText = () => (
     </a>
     .
   </p>
-);
-
-const BannerText = () => (
-  <div className="homepage--header__wrapper">
-    <h1 className="homepage--header__title bx--type-display-01">
-      <span>We are not our users.</span>
-    </h1>
-    <p className="homepage--header__subtitle">
-      An authentic focus on people begins with this recognition.
-    </p>
-  </div>
 );
 
 const customProps = {

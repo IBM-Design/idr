@@ -12,4 +12,5 @@
 
 @include carbon--type-classes();
 
-@import "../../components/HomepageHeader/homepage-header.scss";
+@import "../../components/HomepageHeader/_homepage-header.scss";
+@import "../../components/HomepageNavTile/_homepage-nav-tile.scss";
