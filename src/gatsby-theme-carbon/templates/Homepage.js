@@ -1,6 +1,7 @@
 import React from "react";
 import { HomepageCallout } from "gatsby-theme-carbon";
 import HomepageHeader from "../../components/HomepageHeader";
+import HomepageLightCallout from "../../components/HomepageLightCallout";
 
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
@@ -26,7 +27,7 @@ const customProps = {
   FirstCallout: (
     <HomepageCallout leftText={FirstLeftText} rightText={FirstRightText} />
   ),
-  SecondCallout: null
+  SecondCallout: <HomepageLightCallout />
 };
 
 // spreading the original props gives us props.children (mdx content)

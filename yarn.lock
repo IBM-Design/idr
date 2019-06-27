@@ -854,7 +854,7 @@
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.2.0.tgz#3698b5c3e76bbe3b4b979708adbff68edfbb0e66"
   integrity sha512-KT+VO7p7O0UOfvbfCw95GzJzuqCBREH1G7U3SUfCRl6kGe1KukIA4iwPDmCM1TB4JnIWPJSTZhY+LjpPSEHxgw==
 
-"@carbon/motion@10.2.0":
+"@carbon/motion@10.2.0", "@carbon/motion@^10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@carbon/motion/-/motion-10.2.0.tgz#9e682daff4cb7f7930fa48a9dd19f7a9ed3910c4"
   integrity sha512-vw9JokXvSoFLCv1f157NXrhNqKn3nhQSMlF/DYpeKZZ3WJYs59DxzQVGRaNMVTT9IA5Ma/jeHR4Il80KlR/xbw==
@@ -5781,10 +5781,10 @@ gatsby-telemetry@^1.1.0:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-carbon@^1.3.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-carbon/-/gatsby-theme-carbon-1.3.1.tgz#cce3c2bd6db9094b5a047ace5cedf7bd53026ea4"
-  integrity sha512-EJc6/QPCuozTcGYalRQzZKiwfGjb8KXDCKSIgiBsWhwHR3BAX3s+LkLtDypLbi06GVGeIUkzjOtBmTDgIHWYAg==
+gatsby-theme-carbon@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-carbon/-/gatsby-theme-carbon-1.3.3.tgz#2eaf1ffcd0b2aa57176c8407e25feff616e53221"
+  integrity sha512-wMZNUwGjqshn6P6B9BzKv8LSo+T29UdU4B8Wnj+25/lQI2C14N5yb4JsVvUJ7UwyC1HTfbwBgPD9bxKtjEXPTA==
   dependencies:
     "@carbon/addons-website" "0.0.1-alpha.21"
     "@carbon/colors" "^10.2.0"

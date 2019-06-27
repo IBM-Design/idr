@@ -9,7 +9,7 @@
 }
 
 .homepage--callout--tiles a {
-  color: $carbon--white-0;
+  color: $carbon--white-0 !important;
 }
 
 .homepage--tile-border {
@@ -18,7 +18,8 @@
 
 .homepage--tile-border:hover {
   background-color: $carbon--magenta-50;
-  //   transition: $transition--base $bx--standard-easing;
+
+  transition: $transition--base $carbon--standard-easing;
 }
 
 .homepage--tile-padding {
@@ -27,10 +28,6 @@
 
 .homepage--tile-height {
   height: 100%;
-}
-
-.inside p {
-  line-height: 3rem;
 }
 
 .homepage--tile-wrapper div svg {
@@ -42,6 +39,13 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.homepage--tile-wrapper p {
+  @include carbon--type-style("productive-heading-07", true);
+  @include carbon--breakpoint("lg") {
+    @include carbon--type-style("productive-heading-06", true);
+  }
 }
 
 .homepage--tile-subheader-wrapper {
