@@ -13,7 +13,7 @@ export default class HomepageLightCallout extends React.Component {
               <h3>Why do it?</h3>
             </aside>
             <div
-              className="bx--col-md-4 bx--col-lg-6"
+              className="bx--col-md-5 bx--col-lg-8"
               style={{ marginBottom: `2rem` }}
             >
               <p className="bx--type-expressive-paragraph-01">
