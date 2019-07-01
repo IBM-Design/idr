@@ -3,8 +3,13 @@ import ArticleCard from "gatsby-theme-carbon/src/components/ArticleCard";
 import PropTypes from "prop-types";
 
 export default class HomepageArticles extends React.Component {
-  static PropTypes = {
-    href: PropTypes.string
+  static propTypes = {
+    title: PropTypes.string,
+    author: PropTypes.string,
+    readTime: PropTypes.string,
+    href: PropTypes.string,
+    alt: PropTypes.string,
+    src: PropTypes.node
   };
   render() {
     return (

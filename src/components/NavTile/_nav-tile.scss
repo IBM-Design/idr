@@ -1,0 +1,45 @@
+.overviewpage--tile-spacing {
+  padding: 1px !important;
+}
+
+.overviewpage--tile-border {
+  background-color: $carbon--white-0;
+}
+
+.overviewpage--tile-border:hover {
+  background-color: $carbon--gray-20;
+  transition: $transition--base $carbon--standard-easing;
+}
+
+.overviewpage--tile-padding {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.overviewpage--tile-height {
+  height: 100%;
+}
+
+.inside p {
+  line-height: 2.5rem;
+}
+
+.overviewpage--tile-wrapper div svg {
+  fill: $carbon--gray-100;
+}
+
+.overviewpage--tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.overviewpage--tile-subheader-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.overviewpage--tile-subheader-text {
+  width: 197px;
+}
