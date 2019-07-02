@@ -1,0 +1,23 @@
+<svg width="28px" height="14px" viewBox="0 0 28 14" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M28,2 L28,0 L20,0 L20,14 L22,14 L22,8 L27,8 L27,6 L22,6 L22,2 L28,2 L28,2 Z M6,0 L0,0 L0,14 L2,14 L2,9 L6,9 C7.1045695,9 8,8.1045695 8,7 L8,2 C8,0.8954305 7.1045695,0 6,0 Z M6,7 L2,7 L2,2 L6,2 L6,7 Z M15,0 L10,0 L10,14 L15,14 C16.6568542,14 18,12.6568542 18,11 L18,3 C18,1.34314575 16.6568542,0 15,0 Z M16,11 C16,11.5522847 15.5522847,12 15,12 L12,12 L12,2 L15,2 C15.5522847,2 16,2.44771525 16,3 L16,11 Z" id="path-1"></path>
+    </defs>
+    <g id="IDR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8" transform="translate(-671.000000, -1459.000000)">
+            <rect fill="#F3F3F3" x="0" y="0" width="1312" height="3408"></rect>
+            <g id="Group-2-Copy" transform="translate(653.000000, 1338.000000)">
+                <g id="icon/file/pdf/20" transform="translate(16.000000, 112.000000)">
+                    <g id="pdf" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 9.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

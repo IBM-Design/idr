@@ -1,25 +1,25 @@
 - title: Guiding principles
   pages:
     - title: Overview
-      path: /components/markdown
+      path: /guiding-principles/principles-overview
     - title: Research as a team
-      path: /components/demo
+      path: /guiding-principles/research-as-a-team
     - title: Stay Curious
-      path: /components/Grid
+      path: /guiding-principles/stay-curious
     - title: Make to learn
-      path: /components/DoDontExample
+      path: /guiding-principles/make-to-learn
 - title: Research in practice
   pages:
     - title: Overview
-      path: /contributing/agreement
+      path: /research-in-practice/practice-overview
     - title: Focus on people
-      path: /contributing/governance
+      path: /research-in-practice/focus-on-people
     - title: Plan for success
-      path: /contributing/designers
+      path: /research-in-practice/plan-for-success
     - title: Craft insights
-      path: /contributing/designers
+      path: /research-in-practice/craft-insights
     - title: Find the story
-      path: /contributing/designers
+      path: /research-in-practice/find-the-story
 - title: Ethics
   pages:
-    - path: /getting-started/developers/react
+    - path: /ethics

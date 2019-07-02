@@ -4,6 +4,11 @@ import Footer from "gatsby-theme-carbon/src/components/Footer";
 const Content = () => (
   <>
     <p>
+      Have questions? Email us at <br />
+      <a href="mailto:designthinking@us.ibm.com">designthinking@us.ibm.com</a>
+    </p>
+    <br />
+    <p>
       Last updated May 2019
       <br />
       Copyright © 2019 IBM

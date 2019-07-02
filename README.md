@@ -1,26 +1,21 @@
 <h1 align="center">
-  Carbon Design Gatsby Starter
+  IBM Design Research
 </h1>
 
-Get started using with the Gatsby Carbon theme which includes all configuration you might need to build a beautiful site inspired by the [Carbon Design System](https://www.carbondesignsystem.com).
+This site is built using with the [Gatsby Carbon](https://github.com/carbon-design-system/gatsby-theme-carbon) theme which includes all configuration you might need to build a beautiful site inspired by the [Carbon Design System](https://www.carbondesignsystem.com).
 
 ## 🧗 Getting started
 
-1. **Create your site**
+Install dependencies:
 
-Use the gatsby CLI to bootstrap your site with the starter
-
-```sh
-npx gatsby new my-carbon-site https://github.com/carbon-design-system/gatsby-starter-carbon-theme
+```
+yarn
 ```
 
-2. **Start developing**
+Run dev environment:
 
-Navigate into your directory and start it up
-
-```sh
-    cd my-carbon-site/
-    gatsby develop
+```
+yarn dev
 ```
 
 3. **Make some changes!**
