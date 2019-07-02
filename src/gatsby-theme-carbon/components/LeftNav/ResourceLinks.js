@@ -9,6 +9,6 @@ const links = [
   }
 ];
 
-const CustomResources = () => <ResourceLinks links={links} />;
+const CustomResources = () => <ResourceLinks shouldOpenNewTabs links={links} />;
 
 export default CustomResources;
