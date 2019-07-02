@@ -14,8 +14,8 @@ const FirstLeftText = () => <p>What is Design Research?</p>;
 
 const FirstRightText = () => (
   <p>
-    Design research is at the heart of Enterprise Design Thinking. If you're not
-    practicing design research, you're not working in the Loop. Design research
+    Design research is at the heart of Enterprise Design Thinking. If you’re not
+    practicing design research, you’re not working in the Loop. Design research
     helps teams uncover insights and inform the experiences we create for
     people. It turns out good design really is good business. Learn more about
     the business impact of Enterprise Design Thinking in this{" "}
