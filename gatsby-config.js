@@ -24,42 +24,42 @@ module.exports = {
         include_favicon: false,
         icons: [
           {
-            src: `/src/images/icons/Rebus144.png`,
+            src: `./src/images/icons/Rebus144.png`,
             sizes: `144x144`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus192.png`,
+            src: `./src/images/icons/Rebus192.png`,
             sizes: `192x192`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus256.png`,
+            src: `./src/images/icons/Rebus256.png`,
             sizes: `256x256`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus384.png`,
+            src: `./src/images/icons/Rebus384.png`,
             sizes: `384x384`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus48.png`,
+            src: `./src/images/icons/Rebus48.png`,
             sizes: `48x48`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus512.png`,
+            src: `./src/images/icons/Rebus512.png`,
             sizes: `512x512`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus72.png`,
+            src: `./src/images/icons/Rebus72.png`,
             sizes: `72x72`,
             type: `image/png`
           },
           {
-            src: `/src/images/icons/Rebus96.png`,
+            src: `./src/images/icons/Rebus96.png`,
             sizes: `96x96`,
             type: `image/png`
           }
