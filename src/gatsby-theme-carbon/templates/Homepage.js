@@ -10,20 +10,29 @@ import homepage_03 from "./images/homepage_03.jpg";
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 
-const FirstLeftText = () => <p>What is Design Research?</p>;
+const FirstLeftText = () => <p>Our practice</p>;
 
 const FirstRightText = () => (
-  <p>
-    Design research is at the heart of Enterprise Design Thinking. If you’re not
-    practicing design research, you’re not working in the Loop. Design research
-    helps teams uncover insights and inform the experiences we create for
-    people. It turns out good design really is good business. Learn more about
-    the business impact of Enterprise Design Thinking in this{" "}
-    <a href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf">
-      Forrester report
-    </a>
-    .
-  </p>
+  <>
+    <p>
+      Design research helps teams uncover insights to inform the experiences we
+      create. It begins with the rigorous study of the people we serve and the
+      ecosystems in which they exist. This is the heart of Enterprise Design
+      Thinking. While in the Loop, design research leads teams to continuously
+      build understanding and empathy through observation, prototyping possible
+      solutions, and reflecting on the feedback from our users themselves.
+    </p>
+    <br />
+    <p>
+      {" "}
+      Learn more about the business impact of Design Research and Enterprise
+      Design Thinking in this{" "}
+      <a href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf">
+        Forrester report
+      </a>
+      .
+    </p>
+  </>
 );
 
 const customProps = {
