@@ -1,7 +1,6 @@
 import React from "react";
 import { HomepageCallout } from "gatsby-theme-carbon";
 import HomepageHeader from "../../components/HomepageHeader";
-import HomepageLightCallout from "../../components/HomepageLightCallout";
 import HomepageArticles from "../../components/HomepageArticles";
 import homepage_01 from "./images/homepage_01.jpg";
 import homepage_02 from "./images/homepage_02.jpg";
@@ -42,7 +41,6 @@ const customProps = {
   ),
   SecondCallout: (
     <>
-      <HomepageLightCallout />
       <div
         style={{
           backgroundColor: `#f3f3f3`,
