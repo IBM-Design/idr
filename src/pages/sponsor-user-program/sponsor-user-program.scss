@@ -1,0 +1,15 @@
+.questions {
+  h2 {
+    // margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    margin-bottom: 0 !important;
+    width: 100%;
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
