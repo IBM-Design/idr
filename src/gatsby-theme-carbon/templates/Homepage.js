@@ -16,21 +16,13 @@ const FirstRightText = () => (
     <p>
       Design research helps teams uncover insights to inform the experiences we
       create. It begins with the rigorous study of the people we serve and the
-      ecosystems in which they exist. This is the heart of Enterprise Design
-      Thinking. While in the Loop, design research leads teams to continuously
-      build understanding and empathy through observation, prototyping possible
+      ecosystems in which they exist. This is the heart of{" "}
+      <a href="https://ibm.com/design/thinking">Enterprise Design Thinking</a>.
+      While in the Loop, design research leads teams to continuously build
+      understanding and empathy through observation, prototyping possible
       solutions, and reflecting on the feedback from our users themselves.
     </p>
     <br />
-    <p>
-      {" "}
-      Learn more about the business impact of Design Research and Enterprise
-      Design Thinking in this{" "}
-      <a href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf">
-        Forrester report
-      </a>
-      .
-    </p>
   </>
 );
 
@@ -69,10 +61,12 @@ const customProps = {
               alt="Baby in a hospital."
             />
             <HomepageArticles
-              title="Fun and accuracy: Strike the balance with diverse and empowered team"
-              author="Enterprise Design Thinking"
-              readTime="3 minute read"
-              href="https://medium.com/enterprise-design-thinking/fun-and-accuracy-strike-the-balance-with-a-diverse-and-empowered-team-1b1efaf97a51"
+              title="The Total Economic
+              Impact™ Of IBM’s Design
+              Thinking Practice"
+              author="Forrester"
+              readTime="60 minute read"
+              href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf"
               img={homepage_02}
               alt="Two designers doing some designing."
             />
