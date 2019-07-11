@@ -21,3 +21,8 @@
 
 // Carbon Motion
 @import "@carbon/motion/scss/motion.scss";
+
+// Gives numbered lists some breathing room
+ol li {
+  margin-bottom: 1.5rem;
+}

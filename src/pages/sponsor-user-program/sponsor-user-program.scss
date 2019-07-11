@@ -1,15 +1,16 @@
-.questions {
-  h2 {
-    // margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-
+.bullets {
   ul {
-    margin-bottom: 0 !important;
     width: 100%;
   }
 
-  li:not(:last-of-type) {
+  li {
     margin-bottom: 1.5rem;
+    list-style-position: inside;
+    text-indent: -0.5rem;
+    padding-left: 1rem;
+  }
+
+  li:before {
+    margin-right: 0;
   }
 }
