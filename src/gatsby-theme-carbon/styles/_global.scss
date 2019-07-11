@@ -17,7 +17,6 @@
 @import "../../components/HomepageLightCallout/_homepage-light-callout.scss";
 @import "../../components/HomepageArticles/_homepage-articles.scss";
 @import "../../components/NavTile/_nav-tile";
-@import "../../pages//sponsor-user-program/sponsor-user-program.scss";
 
 // Carbon Motion
 @import "@carbon/motion/scss/motion.scss";
@@ -25,4 +24,22 @@
 // Gives numbered lists some breathing room
 ol li {
   margin-bottom: 1.5rem;
+}
+
+// 2nd line in bulleted lists align with the first word of the 1st line. Gives some margin between list items.
+.bullets {
+  ul {
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+    list-style-position: inside;
+    text-indent: -0.5rem;
+    padding-left: 1rem;
+  }
+
+  li:before {
+    margin-right: 0;
+  }
 }
