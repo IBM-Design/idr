@@ -43,3 +43,26 @@ ol li {
     margin-right: 0;
   }
 }
+
+// 2nd line in bulleted lists align with the first word of the 1st line.
+
+.bullets-no-bottom-margin {
+  ul {
+    width: 100%;
+  }
+
+  li {
+    list-style-position: inside;
+    text-indent: -0.5rem;
+    padding-left: 1rem;
+  }
+
+  li:before {
+    margin-right: 0;
+  }
+}
+
+// Fixes fontsize for the link in the homepage callout
+.container--homepage p a {
+  font-size: 2rem !important;
+}
