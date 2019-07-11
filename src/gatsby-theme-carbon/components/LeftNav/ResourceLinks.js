@@ -3,7 +3,7 @@ import ResourceLinks from "gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
-    title: "W3 Design Research",
+    title: "IBM Internal Resources",
     href: "http://idr-prod.w3ibm.mybluemix.net/design/research/resources/"
   }
 ];

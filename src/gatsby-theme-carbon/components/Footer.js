@@ -19,7 +19,6 @@ const links = {
   ],
   secondCol: [
     { href: "https://twitter.com/ibmdesign", linkText: "Twitter" },
-    { href: "https://facebook.com/ibmdesign", linkText: "Facebook" },
     {
       href: "https://medium.com/enterprise-design-thinking",
       linkText: "Medium"
