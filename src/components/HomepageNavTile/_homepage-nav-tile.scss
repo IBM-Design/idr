@@ -13,11 +13,11 @@
 }
 
 .homepage--tile-border {
-  outline: $carbon--magenta-50 solid 1px;
+  outline: $carbon--magenta-60 solid 1px;
 }
 
 .homepage--tile-border:hover {
-  background-color: $carbon--magenta-50;
+  background-color: $carbon--magenta-60;
 
   transition: $transition--base $carbon--standard-easing;
 }

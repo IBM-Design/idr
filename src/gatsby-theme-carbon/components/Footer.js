@@ -4,12 +4,7 @@ import Footer from "gatsby-theme-carbon/src/components/Footer";
 const Content = () => (
   <>
     <p>
-      Have questions? Email us at <br />
-      <a href="mailto:designthinking@us.ibm.com">designthinking@us.ibm.com</a>
-    </p>
-    <br />
-    <p>
-      Last updated May 2019
+      Last updated July 2019
       <br />
       Copyright © 2019 IBM
     </p>
@@ -24,7 +19,10 @@ const links = {
   ],
   secondCol: [
     { href: "https://twitter.com/ibmdesign", linkText: "Twitter" },
-    { href: "https://facebook.com/ibmdesign", linkText: "Facebook" }
+    {
+      href: "https://medium.com/enterprise-design-thinking",
+      linkText: "Medium"
+    }
   ]
 };
 
