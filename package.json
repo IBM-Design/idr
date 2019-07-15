@@ -3,12 +3,12 @@
   "version": "0.4.0",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "gatsby build",
-    "build:prefix": "gatsby build --prefix-paths",
+    "build": "rm -rf public && PATH_PREFIX='/design/research' gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy:staging": "yarn build && cf login -a https://api.ng.bluemix.net -o IBMDesignOrg -s research -sso && cf push ibm-design-research-staging -f manifest-staging.yml && cf login -a https://api.eu-de.bluemix.net -o IBMDesignOrg -s research -sso && cf push ibm-design-research-staging -f manifest-staging.yml"
   },
   "repository": {
     "type": "git",

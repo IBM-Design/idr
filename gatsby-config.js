@@ -1,4 +1,7 @@
+const { PATH_PREFIX = "/" } = process.env;
+
 module.exports = {
+  pathPrefix: PATH_PREFIX,
   __experimentalThemes: [{ resolve: "gatsby-theme-carbon", options: {} }],
   siteMetadata: {
     title: "IBM Design Research",
@@ -7,7 +10,6 @@ module.exports = {
     keywords:
       "IBM, design, research, design research, design thinking, human-centered design, interviewing, user research, interviews, user experience research, service design, ux research, design strategy, people, practice, observation, user interviews, anthropology"
   },
-  pathPrefix: "/design/research",
 
   plugins: [
     {
