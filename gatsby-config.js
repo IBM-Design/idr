@@ -1,7 +1,4 @@
-const { PATH_PREFIX = "/" } = process.env;
-
 module.exports = {
-  pathPrefix: PATH_PREFIX,
   __experimentalThemes: [{ resolve: "gatsby-theme-carbon", options: {} }],
   siteMetadata: {
     title: "IBM Design Research",
