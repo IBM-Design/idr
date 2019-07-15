@@ -75,3 +75,11 @@ Coming soon!
 ## 🚀 Deployment
 
 Coming soon!
+
+## Pushing to Bluemix (Staging)
+
+Make sure you are in the IBMDesignOrg (See Kelly Churchill)
+
+`yarn deploy:staging`
+
+Staging site 👉 https://wwwstage.ibm.com/design/research
