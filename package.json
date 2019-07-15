@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "gatsby build",
+    "build:prefix": "yarn timestamp && gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "start": "npm run develop",

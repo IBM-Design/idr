@@ -1,0 +1,5 @@
+applications:
+  - name: ibm-design-research
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    memory: 128M
+    instances: 2

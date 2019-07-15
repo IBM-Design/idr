@@ -10,6 +10,7 @@ module.exports = {
     keywords:
       "IBM, design, research, design research, design thinking, human-centered design, interviewing, user research, interviews, user experience research, service design, ux research, design strategy, people, practice, observation, user interviews, anthropology"
   },
+  pathPrefix: "/design/research",
 
   plugins: [
     {
