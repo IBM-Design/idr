@@ -75,3 +75,11 @@ ol li {
     font-size: 2rem !important;
   }
 }
+
+// Fixes the gutter of the article cards on the homeage
+.article-right-gutter {
+  padding-right: 0;
+  @include carbon--breakpoint("md") {
+    padding-right: 1rem;
+  }
+}
