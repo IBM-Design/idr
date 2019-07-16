@@ -64,5 +64,14 @@ ol li {
 
 // Fixes fontsize for the link in the homepage callout
 .container--homepage p a {
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
+  @include carbon--breakpoint("md") {
+    font-size: 1.75rem !important;
+  }
+  @include carbon--breakpoint("lg") {
+    font-size: 1.93rem !important;
+  }
+  @include carbon--breakpoint("xlg") {
+    font-size: 2rem !important;
+  }
 }
