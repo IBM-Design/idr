@@ -13,7 +13,7 @@ export default class HomepageArticles extends React.Component {
   };
   render() {
     return (
-      <div className="bx--col-md-4 bx--col-lg-4 bx--no-gutter--left">
+      <div className="bx--col-sm-4 bx--col-md-4 bx--col-lg-4 bx--no-gutter--left bx--no-gutter-md--left article-right-gutter">
         <ArticleCard
           title={this.props.title}
           author={this.props.author}

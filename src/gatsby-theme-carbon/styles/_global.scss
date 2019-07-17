@@ -64,5 +64,27 @@ ol li {
 
 // Fixes fontsize for the link in the homepage callout
 .container--homepage p a {
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
+  @include carbon--breakpoint("md") {
+    font-size: 1.75rem !important;
+  }
+  @include carbon--breakpoint("lg") {
+    font-size: 1.93rem !important;
+  }
+  @include carbon--breakpoint("xlg") {
+    font-size: 2rem !important;
+  }
+}
+
+// Fixes the gutter of the article cards on the homeage
+.article-right-gutter {
+  padding-right: 0;
+  @include carbon--breakpoint("md") {
+    padding-right: 1rem;
+  }
+}
+
+// Fixes accordion children width
+.bx--accordion__content {
+  padding-right: 1%;
 }
