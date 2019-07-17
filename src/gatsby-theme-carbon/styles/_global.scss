@@ -83,3 +83,8 @@ ol li {
     padding-right: 1rem;
   }
 }
+
+// Fixes accordion children width
+.bx--accordion__content {
+  padding-right: 1%;
+}
