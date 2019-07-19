@@ -23,7 +23,7 @@
 
 // Gives numbered lists some breathing room
 ol li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 // 2nd line in bulleted lists align with the first word of the 1st line. Gives some margin between list items.
@@ -34,9 +34,6 @@ ol li {
 
   li {
     margin-bottom: 1.5rem;
-    list-style-position: inside;
-    text-indent: -0.5rem;
-    padding-left: 1rem;
   }
 
   li:before {
@@ -86,5 +83,21 @@ ol li {
 
 // Fixes accordion children width
 .bx--accordion__content {
-  padding-right: 1%;
+  padding-right: 8%;
+}
+
+//Fixes accordion type and spacing
+.bx--accordion__title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  margin: 0 0 0 0;
+  @include carbon--type-style("heading-02", true);
+}
+
+// Fixes the lenth of the accordion component
+.accordions {
+  ul {
+    width: 100%;
+  }
 }
