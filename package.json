@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rm -rf public && PATH_PREFIX='/design/research' gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public",
+    "build": "rm -rf public && PATH_PREFIX='/design/research' gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public && cp ./static/* public/design/research",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "start": "npm run develop",
