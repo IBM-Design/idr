@@ -17,12 +17,24 @@ const FirstRightText = () => (
       Design research guides teams to uncover insights and inform the
       experiences we create. It begins with the rigorous study of the people we
       serve and the ecosystems in which they exist. This is the heart of{" "}
-      <a href="https://ibm.com/design/thinking" target="_blank">
+      <a
+        href="https://ibm.com/design/thinking"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Enterprise Design Thinking
       </a>
-      . While in the Loop, design research leads teams to continuously build
-      understanding and empathy through observation, prototyping possible
-      solutions, and reflecting on the feedback from our users themselves.
+      . While in the{" "}
+      <a
+        href="https://www.ibm.com/design/thinking/page/framework/loop"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Loop
+      </a>
+      , design research leads teams to continuously build understanding and
+      empathy through observation, prototyping possible solutions, and
+      reflecting on the feedback from our users themselves.
     </p>
     <br />
   </>
