@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rm -rf public && PATH_PREFIX='/design/research' gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public",
+    "build": "rm -rf public && PATH_PREFIX='/design/research' gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public && cp ./static/* public/design/research",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "start": "npm run develop",
@@ -18,7 +18,7 @@
     "@carbon/icons-react": "^10.3.0",
     "@carbon/motion": "^10.2.0",
     "gatsby": "^2.10.0",
-    "gatsby-theme-carbon": "^1.5.0",
+    "gatsby-theme-carbon": "^1.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
