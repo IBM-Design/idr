@@ -9,6 +9,7 @@ export default class HomepageArticles extends React.Component {
     readTime: PropTypes.string,
     href: PropTypes.string,
     alt: PropTypes.string,
+    color: PropTypes.string,
     src: PropTypes.node
   };
   render() {
@@ -19,6 +20,7 @@ export default class HomepageArticles extends React.Component {
           author={this.props.author}
           readTime={this.props.readTime}
           href={this.props.href}
+          color={this.props.color}
         >
           <img alt={this.props.alt} src={this.props.img} />
         </ArticleCard>

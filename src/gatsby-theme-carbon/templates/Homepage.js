@@ -49,21 +49,21 @@ const customProps = {
     <>
       <div
         style={{
-          backgroundColor: `#f3f3f3`,
-          color: `#242a2e`,
+          backgroundColor: `#000000`,
+          color: `#FFFFFF`,
           paddingBottom: `2rem`,
           paddingTop: `4rem`
         }}
       >
         <div className="bx--grid">
           <div className="bx--row">
-            <p className="bx--col-md-3 bx--col-lg-4 bx--type-expressive-heading-03">
+            <p className="bx--col-md-3 bx--col-lg-4 bx--type-expressive-heading-04">
               Latest Articles
             </p>
           </div>
         </div>
       </div>
-      <section className="homepage--articles-gray10">
+      <section className="homepage--articles-black100">
         <div className="bx--grid">
           <div className="bx--row">
             <HomepageArticles
@@ -72,6 +72,7 @@ const customProps = {
               readTime="1 minute read"
               href="https://medium.com/enterprise-design-thinking/more-than-just-medicine-how-design-thinking-uncovered-modern-patient-needs-99063c33d3cb"
               img={homepage_01}
+              color="dark"
               alt="Baby in a hospital."
             />
             <HomepageArticles
@@ -82,6 +83,7 @@ const customProps = {
               readTime="60 minute read"
               href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf"
               img={homepage_02}
+              color="dark"
               alt="Two designers doing some designing."
             />
             <HomepageArticles
@@ -90,6 +92,7 @@ const customProps = {
               readTime="5 minute read"
               href="https://medium.com/enterprise-design-thinking/project-monocle-a-case-for-design-research-f86a1a08df2e"
               img={homepage_03}
+              color="dark"
               alt="Two designers intensely examining something important."
             />
           </div>
