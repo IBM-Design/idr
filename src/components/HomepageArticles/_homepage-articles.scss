@@ -1,10 +1,10 @@
-.homepage--articles-gray10 {
-  background: $carbon--gray-10;
-  color: $carbon--black-100;
-  padding-bottom: 4rem;
+.homepage--articles-black100 {
+  background: $carbon--black-100;
+  color: $carbon--white-0;
+  padding-bottom: 6rem;
 }
 
-.homepage--articles-gray10 .bx--article-card__title {
+.homepage--articles-black100 .bx--article-card__title {
   @include carbon--breakpoint("sm") {
     @include carbon--type-style("productive-heading-03");
   }
