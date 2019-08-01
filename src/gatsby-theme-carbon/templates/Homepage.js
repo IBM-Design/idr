@@ -1,6 +1,6 @@
 import React from "react";
 import { HomepageCallout } from "gatsby-theme-carbon";
-import HomepageHeader from "../../components/HomepageHeader";
+import HomepageVideo from "../../components/HomepageVideo";
 import HomepageArticles from "../../components/HomepageArticles";
 import homepage_01 from "./images/homepage_01.jpg";
 import homepage_02 from "./images/homepage_02.jpg";
@@ -41,7 +41,7 @@ const FirstRightText = () => (
 );
 
 const customProps = {
-  Banner: <HomepageHeader />,
+  Banner: <HomepageVideo src="hero.mp4" poster="hero.png" />,
   FirstCallout: (
     <HomepageCallout leftText={FirstLeftText} rightText={FirstRightText} />
   ),
