@@ -17,6 +17,9 @@
 @import "../../components/HomepageLightCallout/_homepage-light-callout.scss";
 @import "../../components/HomepageArticles/_homepage-articles.scss";
 @import "../../components/NavTile/_nav-tile";
+@import "../../components/HomepageVideo/homepage-video.scss";
+@import "../../components//PlayPauseButton/play-pause-button.scss";
+@import "../../components//VideoInternal/video-internal.scss";
 
 // Carbon Motion
 @import "@carbon/motion/scss/motion.scss";
@@ -75,11 +78,4 @@ ol li {
   padding-right: 1rem;
   // margin: 0 0 0 0;
   @include carbon--type-style("heading-02", true);
-}
-
-// Fixes the lenth of the accordion component
-.accordions {
-  ul {
-    width: 100%;
-  }
 }
