@@ -1,6 +1,127 @@
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageNavTile from "../components/HomepageNavTile";
+import "./index.scss";
 
 export default HomepageTemplate;
 
-<HomepageNavTile />
+<Row className={"getting-started bx--no-gutter desktop"}>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      className="card"
+      title="Guiding principles"
+      href="/guiding-principles/principles-overview"
+      aspectRatio="1:2"
+      hoverColor="dark"
+      actionIcon="arrowRight"
+      >
+
+![Link to Guiding principles](../images/Image_1.png)
+
+  </ImageCard>
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      className="card"
+      title="Research in practice"
+      aspectRatio="1:1"
+      href="/research-in-practice/practice-overview"
+      hoverColor="dark"
+      titleColor="dark"
+      actionIcon="arrowRight"
+      iconColor="dark">
+
+![Link to AI Ethics with an illustration of hotel employees and customers](../images/Image_2.png)
+
+  </ImageCard>
+      <ImageCard
+        className="card"
+        title="Ethics and Responsibility"
+        titleColor="light"
+        aspectRatio="1:1"
+        href="/ethics"
+        actionIcon="arrowRight"
+        hoverColor="dark">
+
+![Link to Conversation Design with chat bubbles](../images/Image_3.png)
+
+  </ImageCard>
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      className="card"
+      title="Sponsor user program"
+      aspectRatio="1:2"
+      href="/sponsor-user-program/overview"
+      titleColor="dark"
+      actionIcon="arrowRight"
+      hoverColor="dark">
+
+![Link to AI Team Essentials with the AI Essentials Framework](../images/Image_4.png)
+
+  </ImageCard>
+</Column>
+</Row>
+
+<Row className={"getting-started bx--no-gutter tablet"}>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+      className="card"
+      title="Guiding principles"
+      href="/guiding-principles/principles-overview"
+      aspectRatio="1:2"
+      hoverColor="dark"
+      actionIcon="arrowRight"
+      >
+
+![Link to guiding principles](../images/Image_1.png)
+
+  </ImageCard>
+
+  <ImageCard
+    className="card"
+    title="Research in practice"
+    aspectRatio="1:1"
+    href="/research-in-practice/practice-overview"
+    actionIcon="arrowRight"
+    titleColor="dark"
+    hoverColor="dark"
+    iconColor="dark"
+    >
+
+![Link to research in practice](../images/Image_2.png)
+
+  </ImageCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+    <ImageCard
+        className="card"
+        title="Ethics and Responsibility"
+        aspectRatio="1:1"
+        href="/ethics"
+        hoverColor="dark"
+        titleColor="light"
+        actionIcon="arrowRight">
+
+![Link to AI Basics with an assortment of shapes strewn about](../images/Image_3.png)
+
+</ImageCard>
+    
+<ImageCard
+    className="card"
+    title="Sponsor user program"
+    titleColor="light"
+    aspectRatio="1:2"
+    href="/sponsor-user-program/overview"
+    actionIcon="arrowRight"
+    titleColor="dark"
+    hoverColor="dark">
+
+![Link to Conversation Design with chat bubbles](../images/Image_4.png)
+
+  </ImageCard>
+</Column>
+</Row>

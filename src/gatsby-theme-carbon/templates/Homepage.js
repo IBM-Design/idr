@@ -2,9 +2,9 @@ import React from "react";
 import { HomepageCallout } from "gatsby-theme-carbon";
 import HomepageVideo from "../../components/HomepageVideo";
 import HomepageArticles from "../../components/HomepageArticles";
-import homepage_01 from "./images/homepage_01.jpg";
-import homepage_02 from "./images/homepage_02.jpg";
-import homepage_03 from "./images/homepage_03.jpg";
+import homepage_01 from "./images/homepage_01.png";
+import homepage_02 from "./images/homepage_02.png";
+import homepage_03 from "./images/homepage_03.png";
 
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
