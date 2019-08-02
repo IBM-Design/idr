@@ -13,6 +13,13 @@
     text-decoration: none;
   }
 
+  .card .gatsby-resp-image-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: inherit;
+  }
+
   &.tablet {
     display: none;
   }
