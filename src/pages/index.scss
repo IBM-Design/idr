@@ -13,20 +13,13 @@
     text-decoration: none;
   }
 
-  .card .gatsby-resp-image-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: inherit;
-  }
-
   &.tablet {
     display: none;
   }
 
   @media (max-width: 1056px) and (min-width: 672px) {
     & {
-      display: none;
+      display: none !important;
     }
 
     &.tablet {
@@ -35,6 +28,30 @@
   }
 }
 
-.hidden {
-  display: none;
+.getting-started-tablet {
+  background-color: #161616;
+  display: flex;
+  max-width: 74.25rem;
+  padding-top: 2.375rem;
+  padding-bottom: 3rem;
+
+  .card a {
+    background: none;
+  }
+
+  .card a:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 672px) {
+    & {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1056px) {
+    & {
+      display: none !important;
+    }
+  }
 }

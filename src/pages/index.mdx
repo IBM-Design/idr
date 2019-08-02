@@ -1,6 +1,10 @@
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageNavTile from "../components/HomepageNavTile";
 import "./index.scss";
+import image1 from "../../static/Image_1.png";
+import image2 from "../../static/Image_2.png";
+import image3 from "../../static/Image_3.png";
+import image4 from "../../static/Image_4.png";
 
 export default HomepageTemplate;
 
@@ -15,7 +19,7 @@ export default HomepageTemplate;
       actionIcon="arrowRight"
       >
 
-![Link to Guiding principles](../images/Image_1.png)
+<img src={image1} />
 
   </ImageCard>
 </Column>
@@ -31,7 +35,7 @@ export default HomepageTemplate;
       actionIcon="arrowRight"
       iconColor="dark">
 
-![Link to AI Ethics with an illustration of hotel employees and customers](../images/Image_2.png)
+<img src={image2} />
 
   </ImageCard>
       <ImageCard
@@ -43,7 +47,7 @@ export default HomepageTemplate;
         actionIcon="arrowRight"
         hoverColor="dark">
 
-![Link to Conversation Design with chat bubbles](../images/Image_3.png)
+<img src={image3} />
 
   </ImageCard>
 </Column>
@@ -58,13 +62,13 @@ export default HomepageTemplate;
       actionIcon="arrowRight"
       hoverColor="dark">
 
-![Link to AI Team Essentials with the AI Essentials Framework](../images/Image_4.png)
+<img src={image4} />
 
   </ImageCard>
 </Column>
 </Row>
 
-<Row className={"getting-started bx--no-gutter tablet"}>
+<Row className={"getting-started-tablet bx--no-gutter"}>
   <Column colMd={4} colLg={4} noGutterSm>
     <ImageCard
       className="card"
@@ -75,7 +79,7 @@ export default HomepageTemplate;
       actionIcon="arrowRight"
       >
 
-![Link to guiding principles](../images/Image_1.png)
+<img src={image1} />
 
   </ImageCard>
 
@@ -90,7 +94,7 @@ export default HomepageTemplate;
     iconColor="dark"
     >
 
-![Link to research in practice](../images/Image_2.png)
+<img src={image2} />
 
   </ImageCard>
 
@@ -106,7 +110,7 @@ export default HomepageTemplate;
         titleColor="light"
         actionIcon="arrowRight">
 
-![Link to AI Basics with an assortment of shapes strewn about](../images/Image_3.png)
+<img src={image3} />
 
 </ImageCard>
     
@@ -120,7 +124,7 @@ export default HomepageTemplate;
     titleColor="dark"
     hoverColor="dark">
 
-![Link to Conversation Design with chat bubbles](../images/Image_4.png)
+<img src={image4} />
 
   </ImageCard>
 </Column>
