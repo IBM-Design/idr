@@ -78,7 +78,7 @@ class HomepageVideo extends Component {
                   </div>
                 </Link>
                 <Link
-                  className={`${prefix}--homepage-video-cta ${prefix}--col-md-3 ${prefix}--col-lg-4`}
+                  className={`${prefix}--homepage-video-cta ${prefix}--homepage-video-cta-two ${prefix}--col-md-3 ${prefix}--col-lg-4`}
                   to="/research-in-practice/practice-overview"
                 >
                   <p className={`white ${prefix}--type-expressive-heading-03`}>
