@@ -16,7 +16,7 @@ const FirstRightText = () => (
     <p>
       Design research guides teams to uncover insights and inform the
       experiences we create. It begins with the rigorous study of the people we
-      serve and the ecosystems in which they exist. This is the heart of{" "}
+      serve and their context. This is the heart of{" "}
       <a
         href="https://ibm.com/design/thinking"
         target="_blank"
