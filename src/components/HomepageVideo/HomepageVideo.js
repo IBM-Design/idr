@@ -78,11 +78,11 @@ class HomepageVideo extends Component {
                   </div>
                 </Link>
                 <Link
-                  className={`${prefix}--homepage-video-cta ${prefix}--col-md-3 ${prefix}--col-lg-4`}
-                  to="/ethics/"
+                  className={`${prefix}--homepage-video-cta ${prefix}--homepage-video-cta-two ${prefix}--col-md-3 ${prefix}--col-lg-4`}
+                  to="/research-in-practice/practice-overview"
                 >
                   <p className={`white ${prefix}--type-expressive-heading-03`}>
-                    Ethics & Responsibilities
+                    Research in practice
                   </p>
                   <div className={`${prefix}--homepage-video-arrow-container`}>
                     <ArrowRight20
