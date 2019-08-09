@@ -19,7 +19,7 @@
     "@carbon/motion": "^10.2.0",
     "gatsby": "^2.10.0",
     "gatsby-plugin-google-analytics": "^2.1.4",
-    "gatsby-theme-carbon": "^1.6.4",
+    "gatsby-theme-carbon": "^1.8.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
