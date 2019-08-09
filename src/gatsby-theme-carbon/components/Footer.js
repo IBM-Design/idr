@@ -4,7 +4,7 @@ import Footer from "gatsby-theme-carbon/src/components/Footer";
 const Content = () => (
   <>
     <p>
-      Last updated July 2019
+      Last updated August 2019
       <br />
       Copyright © 2019 IBM
     </p>
