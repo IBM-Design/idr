@@ -9,14 +9,17 @@ import homepage_03 from "./images/homepage_03.png";
 // Component to be shadowed
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 
-const FirstLeftText = () => <p>Our practice</p>;
+const FirstLeftText = () => (
+  <p className="bx--type-expressive-heading-03">Our practice</p>
+);
 
 const FirstRightText = () => (
   <>
     <p>
-      Design research guides teams to uncover insights and inform the
-      experiences we create. It begins with the rigorous study of the people we
-      serve and their context. This is the heart of{" "}
+      <span className="bx--type-semibold">We are not our users.</span> Design
+      research guides teams to uncover insights and inform the experiences we
+      create. It begins with the rigorous study of the people we serve and their
+      context. This is the heart of{" "}
       <a
         href="https://ibm.com/design/thinking"
         target="_blank"
@@ -57,7 +60,7 @@ const customProps = {
       >
         <div className="bx--grid">
           <div className="bx--row">
-            <p className="bx--col-md-3 bx--col-lg-4 bx--type-expressive-heading-04">
+            <p className="bx--col-md-3 bx--col-lg-4 bx--type-expressive-heading-03">
               Latest Articles
             </p>
           </div>
