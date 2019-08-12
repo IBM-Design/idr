@@ -4,6 +4,15 @@ import Footer from "gatsby-theme-carbon/src/components/Footer";
 const Content = () => (
   <>
     <p>
+      Questions or comments? Start a conversation with us on Twitter at
+      <a href="https://twitter.com/IBMDesign"> @IBMDesign</a> #designresearch.
+      If you’re an IBMer, join the conversation at{" "}
+      <a href="https://app.slack.com/client/T0T3484H4/C0WB7GBRT">
+        #ibm-design-research
+      </a>{" "}
+      on Slack.
+    </p>
+    <p>
       Last updated August 2019
       <br />
       Copyright © 2019 IBM
