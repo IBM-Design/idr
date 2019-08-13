@@ -78,8 +78,20 @@ Coming soon!
 
 ## Pushing to Bluemix (Staging)
 
+Download the [Blue-Green-Deploy](https://github.com/bluemixgaragelondon/cf-blue-green-deploy) Plugin for Cloud Foundry.
+
+`cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org && cf install-plugin blue-green-deploy -r CF-Community`
+
 Make sure you are in the IBMDesignOrg (See Kelly Churchill)
 
 `yarn deploy:staging`
 
 Staging site 👉 https://wwwstage.ibm.com/design/research
+
+## Pushing to Bluemix (Production)
+
+Make sure you are in the IBMDesignOrg (See Kelly Churchill)
+
+`yarn deploy:prod`
+
+Production site 👉 https://www.ibm.com/design/research
