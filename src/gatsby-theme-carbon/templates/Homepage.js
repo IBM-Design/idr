@@ -52,7 +52,7 @@ const customProps = {
     <>
       <div
         style={{
-          backgroundColor: `#000000`,
+          backgroundColor: `#171717`,
           color: `#FFFFFF`,
           paddingBottom: `2rem`,
           paddingTop: `4rem`
