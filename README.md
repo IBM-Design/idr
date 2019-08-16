@@ -68,15 +68,7 @@ This is where we'll document the various utility components as they're added.
 1. [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/)
 1. [MDX](https://mdxjs.com/)
 
-## 👻 Configuration and Shadowing
-
-Coming soon!
-
-## 🚀 Deployment
-
-Coming soon!
-
-## Pushing to Bluemix (Staging)
+## 🚀 Deployment to Bluemix (Staging)
 
 Download the [Blue-Green-Deploy](https://github.com/bluemixgaragelondon/cf-blue-green-deploy) Plugin for Cloud Foundry.
 
@@ -88,7 +80,7 @@ Make sure you are in the IBMDesignOrg (See Kelly Churchill)
 
 Staging site 👉 https://wwwstage.ibm.com/design/research
 
-## Pushing to Bluemix (Production)
+## 🚀 Deployment to Bluemix (Production)
 
 Make sure you are in the IBMDesignOrg (See Kelly Churchill)
 
