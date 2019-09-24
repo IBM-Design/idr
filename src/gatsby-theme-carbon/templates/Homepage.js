@@ -15,13 +15,12 @@ const FirstLeftText = () => (
 
 const FirstRightText = () => (
   <>
-    <p className="bx--type-semibold">We are not our users.</p>
-    <br />
     <p>
       {" "}
-      Design research guides teams to uncover insights and inform the
-      experiences we create. It begins with the rigorous study of the people we
-      serve and their context. This is the heart of{" "}
+      <span className="semibold">We are not our users.</span> Design research
+      guides teams to uncover insights and inform the experiences we create. It
+      begins with the rigorous study of the people we serve and their context.
+      This is the heart of{" "}
       <a
         href="https://ibm.com/design/thinking"
         target="_blank"
