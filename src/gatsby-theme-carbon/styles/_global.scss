@@ -61,3 +61,12 @@ ol li {
     color: $carbon--blue-40 !important;
   }
 }
+
+// Fixes the semibold on the homepage
+.semibold {
+  font-weight: 600 !important;
+}
+
+.last-card {
+  padding-bottom: 199% !important;
+}
