@@ -1,7 +1,7 @@
-const { PATH_PREFIX = "/" } = process.env;
+require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
-  pathPrefix: PATH_PREFIX,
+  pathPrefix: "/design/research",
   __experimentalThemes: [{ resolve: "gatsby-theme-carbon", options: {} }],
   siteMetadata: {
     title: "IBM Design Research",

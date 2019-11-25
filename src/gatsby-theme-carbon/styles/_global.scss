@@ -70,3 +70,9 @@ ol li {
 .last-card {
   padding-bottom: 199% !important;
 }
+
+// Fixes the bullets from jumping too far to the left
+
+.bx--list--unordered > .bx--list__item::before {
+  left: 0rem !important;
+}
