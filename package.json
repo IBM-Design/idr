@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "rm -rf public && rm -rf .cache && gatsby build --prefix-paths && mv public research && mkdir design && mv research design && mkdir public && mv design public",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "start": "npm run develop",
@@ -18,9 +19,9 @@
   "dependencies": {
     "@carbon/icons-react": "^10.6.0",
     "@carbon/motion": "^10.2.0",
-    "gatsby": "^2.10.0",
+    "gatsby": "^2.20.26",
     "gatsby-plugin-google-analytics": "^2.1.4",
-    "gatsby-theme-carbon": "^1.18.0",
+    "gatsby-theme-carbon": "^1.23.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

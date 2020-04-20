@@ -21,6 +21,7 @@ export default class HomepageArticles extends React.Component {
           readTime={this.props.readTime}
           href={this.props.href}
           color={this.props.color}
+          actionIcon="launch"
         >
           <img alt={this.props.alt} src={this.props.img} />
         </ArticleCard>
