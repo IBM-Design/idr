@@ -19,7 +19,7 @@ export default class NavTile extends React.Component {
             <div class="bx--aspect-ratio--object overviewpage--tile-padding">
               <div class="outside overviewpage--tile-height">
                 <div class="inside overviewpage--tile-wrapper">
-                  <p className="bx--type-productive-heading-06">{title}</p>
+                  <p className="bx--type-productive-heading-04">{title}</p>
                   <div className="overviewpage--tile-subheader-wrapper">
                     <span className="overviewpage--tile-subheader-text bx--type-body-short-02">
                       {description}
