@@ -85,7 +85,7 @@ const customProps = {
               Thinking Practice"
               author="Forrester"
               readTime="60 minute read"
-              href="https://www.ibm.com/design/thinking/static/media/Enterprise-Design-Thinking-Report.8ab1e9e1.pdf"
+              href="https://www.ibm.com/design/thinking/static/Enterprise-Design-Thinking-Report-8ab1e9e1622899654844a5fe1d760ed5.pdf"
               img={homepage_02}
               color="dark"
               alt="Two designers doing some designing."
