@@ -2,7 +2,6 @@ require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
   pathPrefix: "/design/research",
-  __experimentalThemes: [{ resolve: "gatsby-theme-carbon", options: {} }],
   siteMetadata: {
     title: "IBM Design Research",
     description:
@@ -10,8 +9,10 @@ module.exports = {
     keywords:
       "IBM, design, research, design research, design thinking, human-centered design, interviewing, user research, interviews, user experience research, service design, ux research, design strategy, people, practice, observation, user interviews, anthropology"
   },
-
   plugins: [
+    {
+      resolve: 'gatsby-theme-carbon',
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
