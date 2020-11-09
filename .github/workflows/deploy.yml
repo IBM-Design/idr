@@ -32,9 +32,6 @@ jobs:
       - name: Install Cloud Foundry CLI
         run: ibmcloud cf install -v 6.51.0
 
-      - name: CF Install
-        run: ibmcloud cf install
-
       - name: BlueGreen Deploy
         run: ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org && ibmcloud cf install-plugin blue-green-deploy -f -r CF-Community
 
