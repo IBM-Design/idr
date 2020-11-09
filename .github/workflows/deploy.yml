@@ -1,0 +1,54 @@
+name: Deployment status
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Reason"
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12.x
+
+      - name: Install packages
+        run: yarn install --frozen-lockfile --network-timeout 300000
+
+      - name: Build site
+        run: yarn build:clean
+
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
+
+      - name: Install Cloud Foundry CLI
+        run: ibmcloud cf install -v 6.51.0
+
+      - name: BlueGreen Deploy
+        run: ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org && ibmcloud cf install-plugin blue-green-deploy -f -r CF-Community
+
+      - name: Login to ibmcloud us-south
+        env:
+          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
+        run: ibmcloud login -a "https://cloud.ibm.com" -u apikey -p "$IBM_CLOUD_API_KEY" -o "IBMDesignOrg" -s research -r "us-south"
+
+      - name: Deploy website
+        run: |
+        ibmcloud cf blue-green-deploy ibm-design-research -f manifest-production.yml --delete-old-apps
+
+      - name: Login to ibmcloud eu-de
+        env:
+          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
+        run: ibmcloud login -a "https://cloud.ibm.com" -u apikey -p "$IBM_CLOUD_API_KEY" -o "IBMDesignOrg" -s research -r "eu-de"
+
+      - name: Deploy website
+        run: |
+        ibmcloud cf blue-green-deploy ibm-design-research -f manifest-production.yml --delete-old-apps
