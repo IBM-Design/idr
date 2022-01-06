@@ -7,11 +7,11 @@ module.exports = {
     description:
       "IBM Design Research helps teams uncover insights and inform the experiences we create for people. It is at the heart of Enterprise Design thinking.",
     keywords:
-      "IBM, design, research, design research, design thinking, human-centered design, interviewing, user research, interviews, user experience research, service design, ux research, design strategy, people, practice, observation, user interviews, anthropology"
+      "IBM, design, research, design research, design thinking, human-centered design, interviewing, user research, interviews, user experience research, service design, ux research, design strategy, people, practice, observation, user interviews, anthropology",
   },
   plugins: [
     {
-      resolve: 'gatsby-theme-carbon',
+      resolve: "gatsby-theme-carbon",
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -22,14 +22,15 @@ module.exports = {
         background_color: `#171717`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        include_favicon: false
-      }
+        include_favicon: false,
+        icon: `src/images/favicon.svg`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-114291834-5"
-      }
-    }
-  ]
+        trackingId: "UA-114291834-5",
+      },
+    },
+  ],
 };
