@@ -47,7 +47,11 @@ const FirstRightText = () => (
 const customProps = {
   Banner: <HomepageVideo src="hero.mp4" poster="hero.png" />,
   FirstCallout: (
-    <HomepageCallout leftText={FirstLeftText} rightText={FirstRightText} />
+    <HomepageCallout
+      backgroundColor="#161616"
+      leftText={FirstLeftText}
+      rightText={FirstRightText}
+    />
   ),
   SecondCallout: (
     <>
@@ -56,7 +60,7 @@ const customProps = {
           backgroundColor: `#171717`,
           color: `#FFFFFF`,
           paddingBottom: `2rem`,
-          paddingTop: `4rem`
+          paddingTop: `4rem`,
         }}
       >
         <div className="bx--grid">
@@ -103,7 +107,7 @@ const customProps = {
         </div>
       </section>
     </>
-  )
+  ),
 };
 
 // spreading the original props gives us props.children (mdx content)

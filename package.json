@@ -7,6 +7,7 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
+    "dev:clean": "gatsby clean && gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "deploy:staging": "yarn build && cf login --sso -a https://api.ng.bluemix.net -o IBMDesignOrg -s research && cf blue-green-deploy ibm-design-research-staging -f manifest-staging.yml && cf login --sso -a https://api.eu-de.bluemix.net -o IBMDesignOrg -s research && cf blue-green-deploy ibm-design-research-staging -f manifest-staging.yml",
@@ -17,14 +18,14 @@
     "url": "https://github.com/IBM-Design/idr"
   },
   "dependencies": {
-    "@carbon/icons-react": "^10.20.0",
-    "@carbon/motion": "^10.9.0",
-    "gatsby": "^2.20.26",
+    "@carbon/icons-react": "^10.44.0",
+    "@carbon/motion": "^10.26.0",
+    "gatsby": "^3.14.6",
     "gatsby-plugin-emotion": "^4.3.15",
     "gatsby-plugin-google-analytics": "^2.1.4",
-    "gatsby-theme-carbon": "^1.27.0",
+    "gatsby-theme-carbon": "^2.1.6",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
