@@ -26,6 +26,9 @@ jobs:
       - name: Build site
         run: yarn build
 
+      - name: Deploy to GH Pages
+        run: yarn deploy
+
       - name: Install IBM Cloud CLI
         run: curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
 
