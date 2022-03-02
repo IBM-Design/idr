@@ -10,7 +10,7 @@
     "dev:clean": "gatsby clean && gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "yarn build && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "deploy:staging": "yarn build && cf login --sso -a https://api.ng.bluemix.net -o IBMDesignOrg -s research && cf blue-green-deploy ibm-design-research-staging -f manifest-staging.yml && cf login --sso -a https://api.eu-de.bluemix.net -o IBMDesignOrg -s research && cf blue-green-deploy ibm-design-research-staging -f manifest-staging.yml",
     "deploy:prod": "yarn build && cf login -a https://api.ng.bluemix.net -o IBMDesignOrg -s research -sso && cf blue-green-deploy ibm-design-research -f manifest-production.yml && cf login -a https://api.eu-de.bluemix.net -o IBMDesignOrg -s research -sso && cf blue-green-deploy ibm-design-research -f manifest-production.yml"
   },
