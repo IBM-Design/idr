@@ -104,6 +104,7 @@
   z-index: 2;
   position: relative;
   padding: $spacing-05;
+  justify-content: space-between;
 
   &:first-of-type {
     border-top-width: 0;
@@ -147,7 +148,7 @@
 }
 
 .#{$prefix}--homepage-video-arrow-container {
-  margin-top: auto;
+  // margin-top: auto;
   align-self: flex-end;
   justify-content: flex-end;
   display: flex;
