@@ -10,12 +10,12 @@ const { prefix } = settings;
 
 class HomepageVideo extends Component {
   state = {
-    loop: true
+    loop: true,
   };
 
   static defaultProps = {
     poster: "hero.png",
-    src: "hero.mp4"
+    src: "hero.mp4",
   };
 
   componentDidMount() {
@@ -32,13 +32,13 @@ class HomepageVideo extends Component {
     if (window.matchMedia(`(max-width: ${breakpoints.md.width})`).matches) {
       if (loop) {
         this.setState({
-          loop: false
+          loop: false,
         });
       }
     } else {
       if (!loop) {
         this.setState({
-          loop: true
+          loop: true,
         });
       }
     }
@@ -104,7 +104,7 @@ HomepageVideo.propTypes = {
   src: PropTypes.string,
 
   // url to poster
-  poster: PropTypes.string
+  poster: PropTypes.string,
 };
 
 export default HomepageVideo;
