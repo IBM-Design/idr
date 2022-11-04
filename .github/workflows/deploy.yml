@@ -8,11 +8,16 @@ on:
   push:
     branches:
       - master
+      - chore/s3-upload-deploy
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: macos-latest
-
+    if: github.repository == 'IBM-Design/idr'
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 16.x
@@ -26,37 +31,14 @@ jobs:
       - name: Build site
         run: yarn build
 
-      - name: Install IBM Cloud CLI
-        run: curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
-
-      - name: Install Cloud Foundry CLI
-        run: ibmcloud cf install -v 6.51.0
-
-      - name: Login to ibmcloud us-south
-        env:
-          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-        run: ibmcloud login -a "https://cloud.ibm.com" -u apikey -p "$IBM_CLOUD_API_KEY" -o "IBMDesignOrg" -s research -r "us-south"
-
-      - name: BlueGreen Deploy
-        run: ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org && ibmcloud cf install-plugin blue-green-deploy -f -r CF-Community
-
-      - name: Deploy website
-        run: ibmcloud cf blue-green-deploy ibm-design-research -f manifest-production.yml --delete-old-apps
-
-      - name: Login to ibmcloud eu-de
-        env:
-          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-        run: ibmcloud login -a "https://cloud.ibm.com" -u apikey -p "$IBM_CLOUD_API_KEY" -o "IBMDesignOrg" -s research -r "eu-de"
-
-      - name: Deploy website
-        run: ibmcloud cf blue-green-deploy ibm-design-research -f manifest-production.yml --delete-old-apps
-        
-      - name: Deploy to GitHub Pages
-        # You may pin to the exact commit or the version.
-        # uses: JamesIves/github-pages-deploy-action@830e6a4f7c81743c52f3fed0ac67428feff9620a
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - uses: jakejarvis/s3-sync-action@master
         with:
-          # This is the branch you wish to deploy to, for example gh-pages or docs.
-          branch: gh-pages
-          # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
-          folder: public
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.COS_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.COS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.COS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.COS_REGION }}
+          AWS_S3_ENDPOINT: https://${{ secrets.COS_ENDPOINT }}
+          SOURCE_DIR: 'public/design/research'
+          DEST_DIR: 'design/research'
