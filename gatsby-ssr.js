@@ -1,10 +1,6 @@
 import React from "react";
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
-  if (process.env.NODE_ENV !== `production`) {
-    return null;
-  }
-
   const script = `
   if(!window) window = {};
   window.idaPageIsSPA = true;
