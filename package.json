@@ -23,7 +23,6 @@
     "@carbon/motion": "^10.29.0",
     "gatsby": "^3.14.6",
     "gatsby-plugin-emotion": "^4.3.15",
-    "gatsby-plugin-google-analytics": "^2.1.4",
     "gatsby-theme-carbon": "^2.3.0",
     "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2",
